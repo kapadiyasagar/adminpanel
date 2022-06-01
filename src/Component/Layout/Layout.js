@@ -89,7 +89,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
-export default function MiniDrawer({children}) {
+export default function MiniDrawer({ children }) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -102,10 +102,10 @@ export default function MiniDrawer({children}) {
   };
 
   const listitems = [
-    {label: "Doctor" , to : "/Doctor" , icon : <SupervisedUserCircleIcon />},
-    {label: "Medicine" , to : "/Medicine" , icon : < VaccinesIcon/>},
-    {label: "About" , to : "/About" , icon : < VaccinesIcon/>}
-    
+    { label: "Doctor", to: "/Doctor", icon: <SupervisedUserCircleIcon /> },
+    { label: "Medicine", to: "/Medicine", icon: < VaccinesIcon /> },
+    { label: "About", to: "/About", icon: < VaccinesIcon /> }
+
   ]
 
   return (
